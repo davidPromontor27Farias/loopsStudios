@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+$fuente-secundaria: 'Alata', sans-serif;
+$fuente-principal:  'Josefin Sans', sans-serif;
+
+//Colores primarios
+
+ $White: hsl(0, 0%, 100%);
+ $Black: hsl(0, 0%, 0%);
+ $Dark-Gray: hsl(0, 0%, 55%);
+ $Very-Dark: hsl(0, 0%, 41%);
+ $grisOscuro: #333333;
+
+ //font bold
+
+ $bold: 700;
+ $ultra-bold: 900;
+
+
+ //font-size: 
+
+ $chica: 1.5rem;
+ $normal: 2rem;
+ $grande: 4rem;

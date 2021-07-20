@@ -1,0 +1,111 @@
+.contenedor-galeria{
+    display: none;
+    
+    
+    @include tablet{
+     
+        padding-bottom:4rem;
+        display: block;
+    }
+    
+}
+
+.creacion, .creacion-mobile{
+    font-size: 3rem;
+    font-weight: $bold;
+    text-transform: uppercase;  
+    
+    @include tablet{
+        font-size: 4rem;
+             
+    }
+        
+}
+
+
+.title-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .boton-all{
+        border: 1px solid $grisOscuro;
+        font-size: 2rem;
+        padding: 1rem 3rem ;
+        transition: all .3s ease;   
+        text-transform: uppercase;
+        font-weight: $bold;
+        &:hover{
+            background-color: $Black;
+            color: $White;
+            transform: scale(1.2);
+        }   
+
+
+
+    }
+
+.imagenes-contenido{
+
+    
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+ 
+    @include desktop{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .cuadricula-imagen{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        
+     
+        
+ 
+      
+
+    }
+    .info{
+        position: absolute;
+        margin-bottom: 3rem;
+        transition: all .3s;
+        transform: scale(1.5);
+
+        opacity: 0;
+        
+
+      
+
+        p{
+            color: $White;
+            font-size: 4rem;
+            line-height: 5rem;
+            font-weight: $bold;
+            text-transform: uppercase;
+          
+            max-width: 18rem;
+            margin: 0 auto;
+
+            @include desktop{
+                font-size: 2.5rem;
+                max-width: 13rem;
+                line-height: 3rem;
+            }
+           
+        }
+    }
+    .cuadricula-imagen:hover .info{
+        transform: scale(1.4);
+        opacity: 1;
+       
+    }
+  
+    
+   
+
+}

@@ -1,0 +1,63 @@
+.mobile-design{
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+    @include tablet{
+        display: none;
+    }
+    .cuadricula-mobile{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        
+        margin-bottom: 2rem;
+
+    }
+    .info-mobile{
+        position: absolute;
+        margin-bottom: 3rem;
+        transition: all .3s ease-in-out;
+        transform: scale(1.5);
+        margin-left: 5rem;
+        color: $White;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        max-width: 10rem;
+        opacity: 0;
+        font-weight: $bold;
+
+   
+    }
+
+    .cuadricula-mobile:hover .info-mobile{
+        transform: scale(1.4);
+        
+        opacity: 1;
+    }
+    .creacion-mobile{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .boton{
+        width: 10rem;
+        margin: 0 auto;
+
+        .boton-down{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: $bold;
+            border: 2px solid $Black;
+            padding: .5rem 1rem ;
+            text-align: center;
+            transition: all .3s ease-in-out;
+            max-width: 10rem;
+            
+            &:hover{
+                background-color: $Black;
+                color: $White;
+                transform: scale(1.2);
+            }
+        }
+    }
+}

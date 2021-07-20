@@ -1,0 +1,27 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+    color: $Black;
+}
+img{
+    width: 100%;
+    padding: 0;
+}
+body{
+    font-family: $fuente-principal;
+    line-height: 1.6rem;
+    background-color: $White;
+}
+
+
+.contenedor{
+    max-width: 110rem;
+    width: 80%;
+    margin: 0 auto;  
+}

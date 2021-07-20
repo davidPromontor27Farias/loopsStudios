@@ -1,0 +1,110 @@
+.footer{
+    background-color: $Black;
+
+    .footer-seccion{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        @include tablet{
+           flex-direction: row;
+        justify-content: space-between; 
+        }
+        
+        
+    }
+
+    .first-seccion{
+        .image-logo{
+            display: flex;
+            justify-content: center;
+
+            img{
+            align-items: center;
+            width: 20rem;
+        }
+        }
+        
+
+    }
+    .iconos{
+        .redes{
+            display: flex;
+            max-width: 20rem;
+            margin: 0 auto;
+            
+            img{
+                margin-left: 2rem;
+                transition: all .3s ease-in-out;
+                width: auto;
+                margin: 0 auto;
+                padding-top: 3rem;
+
+                @include tablet{
+             
+                    margin: 0 1rem;
+                    padding-top: 0;
+                }
+
+                &:hover{
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+            }
+            
+        }
+        p{
+            color: $White;
+            font-size: 1.5rem;
+            margin-top: 5rem;
+            text-align: center;
+        }
+    }
+}
+.navegacion-footer{
+
+    .nav-separacion{
+        display: flex;
+        flex-direction: column;
+        max-width: 8rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        @include tablet{
+            flex-direction: row;
+            max-width: auto;
+        
+            margin: 4rem 0;
+            
+        }
+        a{
+          
+            margin-right: 1.5rem;
+            color: $White;
+            font-size: 1.4rem;
+            font-weight: $ultra-bold;
+            line-height: 3rem;
+            position: relative;
+            text-align: center;
+
+            &:hover{
+                color: $Dark-Gray;
+            }
+            
+            &:before{
+                content: "";
+                display: block;
+                margin: 0;
+                width: 0;
+                height: 3px;
+                background: $White;
+                position: absolute;
+                bottom: 0;
+                transition: all .3s;
+            }
+            &:hover:before{
+                width: 100%;
+            }   
+         } 
+
+    }
+}

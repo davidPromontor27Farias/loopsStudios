@@ -1,0 +1,63 @@
+main{
+    padding: 10rem 0 10rem 0;
+    
+    .encimados{
+        @include desktop{
+            display: flex;
+        }
+        
+    }
+    .contenido-interactivo{
+            background-color: $White;
+            max-width: 50rem;
+            height: 20rem;
+            margin: 0 auto;
+            @include desktop{
+            
+                position: absolute;
+                padding: 5rem;
+                top: 260px;
+                left: 430px;
+                width: 50rem;
+                height: 40rem;
+                margin: 0 auto;
+
+              
+            }
+            .titulo-interactivo{
+
+                
+                font-size: 2rem;
+                text-transform: uppercase;
+                line-height: 4rem;
+                text-align: center;
+                @include tablet{
+                    text-align: left;
+                    font-size: 3rem;
+                }
+                @include desktop{
+                    font-size: 4rem;
+                    
+                }
+                
+
+            
+             
+            }
+            .parrafo-interactivo{
+                font-size: 2rem;
+                line-height: 2.5rem;
+                font-weight: $bold;
+                text-align: center;
+                @include tablet{
+                    text-align: left;
+                }
+                
+             
+            }
+
+            
+        }
+ }
+    
+        

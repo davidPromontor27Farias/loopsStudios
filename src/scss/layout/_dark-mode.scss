@@ -1,0 +1,23 @@
+.dark-mode{
+    width: 3rem;
+    
+    img{
+        margin-top: 3rem;
+        filter: invert(100%);
+    }
+}
+.oscuro-agregado{
+    background-color: darken($grisOscuro, 7);
+
+    .creacion, .boton-all{
+        color: $White;
+
+    }
+    
+    .dark-mode{
+        transition: all .3s ease-in;
+        filter: invert(80%);
+    }
+   
+    
+}
