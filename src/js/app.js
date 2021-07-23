@@ -4,6 +4,10 @@ function eventListener(){
     const cerrar = document.querySelector('.icono-cerrar');
     const navegacion = document.querySelector('.navegacion');
     const modoOscuro = document.querySelector('#modo-oscuro');
+    const quitarAccion = document.querySelector('.boton-all');
+    const quitarAccion2 = document.querySelector('.boton-down')
+
+    
     
     cerrar.addEventListener('click', ()=>{
         if(navegacion.classList.contains('mostrar')){
@@ -20,10 +24,16 @@ function eventListener(){
             
         }
     })
-
     modoOscuro.addEventListener('click', ()=>{
         document.body.classList.toggle('oscuro-agregado');
+
     });
 
-    //hola mundo
+    quitarAccion.addEventListener('click', (e)=>{
+        e.preventDefault();
+    })
+    quitarAccion2.addEventListener('click', (e)=>{
+        e.preventDefault();
+    })
+
 }

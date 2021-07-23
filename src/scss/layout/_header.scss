@@ -136,6 +136,11 @@
 .frase{
     padding-bottom: 5rem;
     padding-top: 28rem;
+
+    @include desktop{
+        padding-top: 20rem;
+    }
+
     
     .contenido-frase{
         font-size: 2.5rem;

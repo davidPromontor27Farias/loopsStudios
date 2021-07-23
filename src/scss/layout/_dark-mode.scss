@@ -7,6 +7,7 @@
     }
 }
 .oscuro-agregado{
+    transition: all .3s ease-in;
     background-color: darken($grisOscuro, 7);
 
     .creacion, .boton-all{
@@ -18,6 +19,17 @@
         transition: all .3s ease-in;
         filter: invert(80%);
     }
-   
+    .boton-down{
+        border: 1px solid $White;
+        color: $White;
+    }
+    .contenido-interactivo{
+        transition: all .3s ease-in;
+        background-color: darken($grisOscuro, 7);
+
+        .titulo-interactivo, .parrafo-interactivo{
+            color: $White;
+        }
+    }
     
 }

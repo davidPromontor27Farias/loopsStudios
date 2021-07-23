@@ -58,54 +58,42 @@
     @include desktop{
         grid-template-columns: repeat(4, 1fr);
     }
-    .cuadricula-imagen{
+    .imagen-cuadricula{
         position: relative;
+        width: 100%;
         display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        
-     
-        
- 
-      
+
 
     }
     .info{
         position: absolute;
-        margin-bottom: 3rem;
-        transition: all .3s;
-        transform: scale(1.5);
-
-        opacity: 0;
-        
-
-      
-
-        p{
-            color: $White;
-            font-size: 4rem;
-            line-height: 5rem;
-            font-weight: $bold;
-            text-transform: uppercase;
-          
-            max-width: 18rem;
-            margin: 0 auto;
-
-            @include desktop{
-                font-size: 2.5rem;
-                max-width: 13rem;
-                line-height: 3rem;
-            }
-           
-        }
-    }
-    .cuadricula-imagen:hover .info{
-        transform: scale(1.4);
-        opacity: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        background: rgba(0, 0, 0, 0.466);
+        height: 100%;
+        width: 100%;
        
+        opacity: 0;
+       
+     
+
     }
-  
-    
+
+    p{
+        color: $White;
+        font-size: 3rem;
+        text-transform: uppercase;
+        line-height: 3rem;
+        font-weight: bold;
+        max-width: 17rem;
+        margin-left: 2rem;
+     
+    }    
    
 
+}
+.imagen-cuadricula:hover .info,  p{
+    opacity: 1;
+    transition: .3s all ease-in; 
 }
