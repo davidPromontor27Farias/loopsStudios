@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+<body>
+ 
+    <div class="barra-header">
+        <div class="contenedor">
+            <div class="dark-mode">
+                <img   class="mod-dark" src="/images/dark-mode.svg" alt="">
+            </div>
+            <div class="logotipo">
+                <h1 class="logotipo logotipo-tienda">loopStore</h1>
+              </div>
+        </div>
+    </div>
+
+    <div class="contenido-carrito-compra">
+        <ul>
+            <li class="submenu">
+                <img class="icono-carrito" src="/images/cart.png" alt="carrito de compras icono">
+                <div class="carrito">
+                    <table class="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody"></tbody>
+                    </table>
+                    <div class="vaciar-carrito">
+                        <a class="vaciar-btn" href="/completarCompra.html">Completar compra</a>   
+                    </div>
+                    
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <main class="contenido-productos">
+        <h1 class="title-product">Productos disponibles</h1>
+        <div class="productos-card">
+            <div class="card-articulo">
+                <img class="img-producto" src="/productosTienda/numero1.webp" alt="lentes vr">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Lentes vr Play Station</h1>
+                    <h1 class="titulo-precio">MXN 9578.00</h1>
+                    <h3>Antes <span>MXN 12456.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="1"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/productosTienda/numero2.webp" alt="modem alcatel">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Modem Alcatel Black</h1>
+                    <h1 class="titulo-precio">MXN 1500.00</h1>
+                    <h3>Antes <span>MXN 1700.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="2"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/productosTienda/numero4.webp" alt="Huawei Matebook">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Huawei Matebook D15</h1>
+                    <h1 class="titulo-precio">MXN 23456.00</h1>
+                    <h3>Antes <span>Antes MXN 25245.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="3"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/productosTienda/numero5.webp" alt="Moto G8 Play">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Moto G8 Play 128 Giga</h1>
+                    <h1 class="titulo-precio">MXN 10234.00</h1>
+                    <h3>Antes <span>Antes MXN 12456.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="4"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/productosTienda/numero6.webp" alt="Huawei Matebook D13">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Huawei Matebook D13</h1>
+                    <h1 class="titulo-precio">MXN 19500.00</h1>
+                    <h3>Antes <span>Antes MXN 23456.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="5"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/productosTienda/numero7.webp" alt="Bocina JBL">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Bocina Speaker JBL Black</h1>
+                    <h1 class="titulo-precio">MXN 3450.00</h1>
+                    <h3>Antes <span>Antes MXN 4000.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="6"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/productosTienda/numero8.webp" alt="Bocina JBL">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Monitor LG 32"</h1>
+                    <h1 class="titulo-precio">MXN 15600.00</h1>
+                    <h3>Antes <span>Antes MXN 18800.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="7"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/productosTienda/numero9.webp" alt="Bocina JBL">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Bocina JBL Verde Mate</h1>
+                    <h1 class="titulo-precio">MXN 2500.00</h1>
+                    <h3>Antes <span>Antes MXN 3000.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="8"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/productosTienda/numero10.webp" alt="Dron mx-Steel">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Dron Mx-steel 100m altura</h1>
+                    <h1 class="titulo-precio">MXN 5000.00</h1>
+                    <h3>Antes <span>Antes MXN 6000.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="9"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/productosTienda/numero11.webp" alt="vizanti reloj">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Reloj Vizanti model black/red</h1>
+                    <h1 class="titulo-precio">MXN 4500.00</h1>
+                    <h3>Antes <span>Antes MXN 5000.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="10"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/productosTienda/numero12.webp" alt="Bicileta mercurio">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Bicicleta Mercurio rodada 22</h1>
+                    <h1 class="titulo-precio">MXN 3400.00</h1>
+                    <h3>Antes <span>Antes MXN 4000.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="11"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/productosTienda/numero13.webp" alt="Scooter">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Bicileta Scooter electrica Black model</h1>
+                    <h1 class="titulo-precio">MXN 10600.00</h1>
+                    <h3>Antes <span>Antes MXN 13000.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="12"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="seccion-telefonos contenido-productos">
+        <h1 class="titulos-auxiliares">Celulares</h1>
+        <div class="productos-card-telefonos productos-card">
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/telefono1.webp" alt="moto g8 plus">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Moto G8 Plus Black Intense</h1>
+                    <h1 class="titulo-precio">MXN 12500.00</h1>
+                    <h3>Antes <span>MXN 13500.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="13"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/telefono2.webp" alt="samsung A51">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Samsung A51 Plus White Intense</h1>
+                    <h1 class="titulo-precio">MXN 7600.00</h1>
+                    <h3>Antes <span>MXN 9500.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="14"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/telefono3.webp" alt="Moto Gplay">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Moto Gplay 2021 Space Grey</h1>
+                    <h1 class="titulo-precio">MXN 14500.00</h1>
+                    <h3>Antes <span>MXN 16000.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="15"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/telefono4.webp" alt="samsung A51">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Samsung A51 plus Black Intense</h1>
+                    <h1 class="titulo-precio">MXN 7600.00</h1>
+                    <h3>Antes <span>MXN 9500.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="16"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/telefono5.webp" alt="xiaomi">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Xiaomi mi Note 8 Blue edition</h1>
+                    <h1 class="titulo-precio">MXN 7500.00</h1>
+                    <h3>Antes <span>MXN 8500.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="17"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/telefono6.webp" alt="iphone 13 max">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">IPhone 13 pro max Space Grey</h1>
+                    <h1 class="titulo-precio">MXN 37500.00</h1>
+                    <h3>Antes <span>MXN 40000.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="18"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/telefono7.webp" alt="lentes vr">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Lentes vr Play Station</h1>
+                    <h1 class="titulo-precio">MXN 9578.00</h1>
+                    <h3>Antes <span>MXN 12456.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="19"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/telefono8.webp" alt="lentes vr">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Samsung A51 Pro </h1>
+                    <h1 class="titulo-precio">MXN 9578.00</h1>
+                    <h3>Antes <span>MXN 12456.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="20"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="seccion-computadoras contenido-productos">
+        <h1 class="titulos-auxiliares">Laptops</h1>
+        <div class="productos-card cards-computadoras">
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/compu1.webp" alt="HP Notebook">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">HP Notebook Grey 500gb</h1>
+                    <h1 class="titulo-precio">MXN 13500.00</h1>
+                    <h3>Antes <span>MXN 16000.00.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="22"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/compu2.webp" alt="laptop DELL">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Laptop DELL m-dfje 256gb</h1>
+                    <h1 class="titulo-precio">MXN 12450.00</h1>
+                    <h3>Antes <span>MXN 14000.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="23"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/compu3.webp" alt="laptop HP">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Laptop HP Notebook 500gb</h1>
+                    <h1 class="titulo-precio">MXN 14500.00</h1>
+                    <h3>Antes <span>MXN 15000.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="24"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/compu4.jpg" alt="lentes vr">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Laptop ASUS zen vivoBook 256gb</h1>
+                    <h1 class="titulo-precio">MXN 18000.00</h1>
+                    <h3>Antes <span>19000.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="25"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/compu5.jpg" alt="Hp notebook">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">HP Notebook m34 500gb Intense Blue</h1>
+                    <h1 class="titulo-precio">MXN 15000.00</h1>
+                    <h3>Antes <span>MXN 15500.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="26"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+            <div class="card-articulo">
+                <img class="img-producto" src="/moreImage/compu6.jpg" alt="omen laptop">
+                <div class="informacion-producto">
+                    <h1 class="nombre-articulo">Laptop Gamer Omen 1tb </h1>
+                    <h1 class="titulo-precio">28000.00</h1>
+                    <h3>Antes <span>MXN 30000.00</span></h3>
+
+                    <div class="iconos">
+                        <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                        <img src="./images/ic_tienda.svg" alt="tienda icono">
+                    </div>
+
+                    <a data-id="27"  class="btn-agregar">Add</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="src/js/carrito.js" type="module"></script>
+    
+</body>
+</html>

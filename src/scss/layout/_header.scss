@@ -31,14 +31,7 @@
     color: $White;
  
 
-    .cerrar{
-        width: 3rem;
-        
 
-        @include desktop{
-            display: none;
-        }
-    }
 
 }
 .logotipo{
@@ -46,19 +39,23 @@
     font-family: $fuente-secundaria;
     margin-top: 0;
 }
-.navegacion{
-    position: absolute;
-    top: 12rem;
-    left: auto;
-    border: 1px solid $White;
-    padding: 1rem;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility .2s ease-in-out, opacity 0.5s linear;
-    
-    
+.cerrar{
+    width: 3rem;
+    position: relative;
+    right: 10px;
+    z-index: +3;
 
-    @include desktop{
+
+    @include tablet{
+        display: none;
+    }
+}
+
+.navegacion{
+    display: none;
+
+    @include tablet{
+        display: block;
         position: inherit;
         border: none;
         top: none;
@@ -69,87 +66,33 @@
     }
     nav{
         display: flex;
-        flex-direction: column;
-        @include desktop{
-
-            flex-direction: row;
-    
-        }
-        a{
-            margin-bottom: 1.5rem;
-            color: $White;
-            font-size: 1.8rem;
-            font-weight: $ultra-bold;
-            line-height: 3rem;
-            position: relative;
-
-            &:hover{
-                color: $Dark-Gray;
-            }
-            
-            &:before{
-                content: "";
-                display: block;
-                margin: 0;
-                width: 0;
-                height: 3px;
-                background: $White;
-                position: absolute;
-                bottom: 0;
-                transition: all .3s;
-            }
-            &:hover:before{
-                width: 100%;
-                
-            }
-
-
-            @include desktop{
-                margin-right: 1.5rem;
-            }
-        }
-        a{
-            &:before{
-                left: 50%;
-            }
-            &:hover:before{
-                left: 0;
-            }
-
-        }
-       
-        
-       
-        
+        flex-direction: row;
     }
-}
-.mostrar{
-    
-    visibility: visible;
-    opacity: 1;
-    
-}
+}  
+
+
 .new-image{
     background-image: url(/images/icon-close.svg);
 }
 
 .frase{
     padding-bottom: 5rem;
-    padding-top: 28rem;
+    padding-top: 10rem;
+ 
 
     @include desktop{
         padding-top: 20rem;
+    
     }
 
     
     .contenido-frase{
         font-size: 2.5rem;
         text-transform: uppercase;
-        max-width: auto;
-        max-height: auto;
         color: $White;
         border: 4px solid $White;
         line-height: 4rem;
+
 
         @include tablet{
             font-size: 8rem;
@@ -163,8 +106,9 @@
             margin: 0;
             padding: 2rem;
             max-width: auto;
-            font-size: 3.6rem;
+            font-size: auto;
             line-height: 6rem;
+            font-weight: bold;
             
 
             @include tablet{
@@ -176,3 +120,90 @@
         }
     }
 }
+
+.enlaces{
+
+    margin-bottom: 1.5rem;
+    color: $White;
+    font-size: 1.8rem;
+    font-weight: $ultra-bold;
+    line-height: 3rem;
+    position: relative;
+
+    &:hover{
+        color: $Dark-Gray;
+    }
+    
+    &:before{
+        content: "";
+        display: block;
+        margin: 0;
+        width: 0;
+        height: 3px;
+        background: $White;
+        position: absolute;
+        bottom: 0;
+        transition: all .3s;
+    }
+    &:hover:before{
+        width: 100%;
+        
+    }
+
+
+    @include tablet{
+        margin-right: 1.5rem;
+    }
+}
+
+
+.enlaces{
+    &:before{
+        left: 50%;
+    }
+    &:hover:before{
+        left: 0;
+    }
+
+}
+
+
+.navegacion-mobile{
+    position: absolute;
+    z-index: +3;
+    top: 120px;
+    right: 0px;
+    border: 1px solid white;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    transition: all .3s ease-in-out;
+
+
+
+    .nav-mobile{
+        display: flex;
+        justify-content: space-between;
+     
+        flex-direction: row;
+        background-color: rgb(20, 20, 20);
+        padding: 1rem;
+
+        a{
+            margin-bottom: 0;
+        }
+
+    }
+
+    @include tablet{
+        display: none;
+    }
+
+
+}
+.mostrar{
+    
+    visibility: visible;
+    opacity: 1;
+}    
+

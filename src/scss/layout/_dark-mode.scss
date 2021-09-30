@@ -7,14 +7,14 @@
     }
 }
 .oscuro-agregado{
-    transition: all .3s ease-in;
+    
     background-color: darken($grisOscuro, 7);
 
-    .creacion, .boton-all{
+    .creacion, .boton-all, .title-product{
         color: $White;
 
     }
-    
+
     .dark-mode{
         transition: all .3s ease-in;
         filter: invert(80%);
@@ -31,5 +31,39 @@
             color: $White;
         }
     }
-    
+
+
+    .productos-card{
+
+        .card-articulo{
+            background-color: rgb(71, 67, 67);
+
+            h1,h3{
+                color: white;
+            }
+            span{
+                font-weight: bold;
+            }
+
+            input{
+                background-color: rgb(53, 51, 51);
+                color: white;
+            }
+
+            .btn-agregar{
+                background-color: rgb(39, 33, 33);
+                color: $White;
+            }
+        }
+    }
+
+    .carrito-icono{
+        
+        background-color: white;
+    }
+    .contenido-productos{
+        .titulos-auxiliares{
+            color: $White;
+        }
+    }
 }

@@ -1,0 +1,32 @@
+.contenedor-compra{
+    max-width: 80rem;
+    margin: 10rem auto;
+    background-color: rgb(70, 58, 58);
+    color: $White;
+    min-height: auto;
+    padding: 2rem;
+
+
+    .lista-carrito-compra{
+        width: 100%;
+
+    }
+
+    th{
+        font-size: 2rem;
+    }
+
+}
+
+.contenido-pago{
+    margin-top: 4rem;
+
+    img{
+        width: 3rem;
+    }
+
+    .opciones-pago{
+        display: flex;
+        gap: 3rem;
+    }
+}

@@ -27,39 +27,6 @@
         
 
     }
-    .iconos{
-        .redes{
-            display: flex;
-            max-width: 20rem;
-            margin: 0 auto;
-            
-            img{
-                margin-left: 2rem;
-                transition: all .3s ease-in-out;
-                width: auto;
-                margin: 0 auto;
-                padding-top: 3rem;
-
-                @include tablet{
-             
-                    margin: 0 1rem;
-                    padding-top: 0;
-                }
-
-                &:hover{
-                    transform: scale(1.2);
-                    cursor: pointer;
-                }
-            }
-            
-        }
-        p{
-            color: $White;
-            font-size: 1.5rem;
-            margin-top: 5rem;
-            text-align: center;
-        }
-    }
 }
 .navegacion-footer{
 
@@ -106,5 +73,42 @@
             }   
          } 
 
+    }
+}
+
+
+.iconos{
+
+    
+    .redes{
+        display: flex;
+        max-width: 20rem;
+        margin: 0 auto;
+        
+        img{
+            margin-left: 2rem;
+            transition: all .3s ease-in-out;
+            width: auto;
+            margin: 0 auto;
+            padding-top: 3rem;
+
+            @include tablet{
+         
+                margin: 0 1rem;
+                padding-top: 0;
+            }
+
+            &:hover{
+                transform: scale(1.2);
+                cursor: pointer;
+            }
+        }
+        
+    }
+    p{
+        color: $White;
+        font-size: 1.5rem;
+        margin-top: 5rem;
+        text-align: center;
     }
 }

@@ -1,0 +1,41 @@
+
+.info-resumida{
+
+
+    .img-producto{
+        width: 4rem;
+
+        @include tablet{
+            width: 8rem;
+        }
+    }
+    td{
+        text-align: center;
+        line-height: 3rem;
+        
+        h1{
+            font-size: 1.2rem;
+
+            @include tablet{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.contenido-alerta{
+    
+    max-width: 30rem;
+
+    position: relative;
+    top: 250px;
+    margin: 0 auto;
+    background-color: rgb(59, 56, 56);
+    padding: 2rem;
+
+    h1{
+        color: $White;
+        line-height: 3.5rem;
+        font-size: 2rem;
+    }
+}

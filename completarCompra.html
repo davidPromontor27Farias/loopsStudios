@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+<body>
+    <div class="contenedor-compra">
+        <div class="contenedor-informacion">
+            <div class="carrito-compra">
+                <table class="lista-carrito-compra">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="cuerpo"></tbody>
+                </table>
+
+                <div class="contenido-pago">
+                    <div class="total">
+                        <h1 class="alerta-pago"></h1>
+                    </div>
+                    <h1>¿Como prefiere pagar?</h1>
+
+                    <div class="opciones-pago">
+                        <div class="opciones">
+                            <a href="#">
+                            <img src="/images/icons8-mercado-pago-48.png" alt="icon mercado pago">
+                            </a>
+                            <h2>Mercado pago</h2>
+                        </div>
+                        <div class="opciones">
+                            <a href="#">
+                                <img src="/images/icons8-credit-card-58.png" alt="icon credito card">
+                            </a>
+                            <h2>Tarjeta de credito</h2>
+                        </div>
+                        <div class="opciones">
+                            <a href="#">
+                                <img src="/images/icons8-credit-card-49.png" alt="icon debito card">
+                            </a>
+                            
+                            <h2>Tarjeta de debito</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenido-alerta"></div>
+
+    <script src="src/js/metodos.js" type="module"></script>
+</body>
+</html>

@@ -12,12 +12,12 @@
 
     <div class="contenedor">
       <div class="dark-mode">
-        <img   id="modo-oscuro" src="/images/dark-mode.svg" alt="">
+        <img   class="modo-oscuro" src="/images/dark-mode.svg" alt="">
       </div>
 
       <div class="barra-navegacion">
         <div class="logotipo">
-          <h1 class="logotipo">loopStudios</h1>
+          <h1 class="logotipo">loopStore</h1>
         </div>
 
         <div class="cerrar">
@@ -25,50 +25,57 @@
         </div>
 
         <div class="navegacion">
-          <nav class="nav">
-            <a href="#">Nosotros</a>
-            <a href="#">Carreras</a>
-            <a href="#">Eventos</a>
-            <a href="#">Productos</a>
-            <a href="#">Soporte</a>
+          <nav class="nav nav-global">
+            <a class="enlaces" href="#us">Nosotros</a>
+            <a class="enlaces" href="#events">Eventos</a>
+            <a class="enlaces" href="#products">Productos</a>
+            <a class="enlaces" href="#suport">Contacto</a>
           </nav>
         </div>
+
+      </div>
+
+      <div class="navegacion-mobile">
+        <nav class="nav-mobile nav-global">
+          <a class="enlaces" href="#us">Nosotros</a>
+          <a class="enlaces" href="#Events">Eventos</a>
+          <a class="enlaces" href="#products">Productos</a>
+          <a class="enlaces" href="#suport">Contacto</a>
+        </nav>
       </div>
 
       <div class="frase">
         <div class="contenido-frase">
-          <p>Inmersive Experiencies that deliver</p>
+          <p>Experiencias inmersivas encontradas</p>
         </div>
       </div>
-
 
     </div>
 
   </header>
-  <main class="contenedor main">
+  <div class="contenedor main" id="us">
     <div class="encimados">
       <div class="imagen-interactivo">
         <img src="/build/img/desktop/image-interactive.jpg" alt="">
       </div>
       <div class="contenido-interactivo">
-        <h2 class="titulo-interactivo">The leader in interactive Vr</h2>
-        <p class="parrafo-interactivo">Founded in 2011, Loopstudios has been producing world-class virtual 
-          reality projects for some of the best companies around the globe. Our award-winning creations have transformed 
-          businesses through digital experiences that bind to their brand.</p>
+        <h2 class="titulo-interactivo">La tienda de tecnologia mas divertida</h2>
+        <p class="parrafo-interactivo">Fundada en 2011, loopStore es una tienda global de tecnología y productora de eventos, nos caracterizamos por estar siempre al margen de los introvertidos y 
+          lo desconocido, aparte del hecho de que amamos la tecnología..</p>
       </div>
 
     </div>
-  </main>
-  <section class="contenedor contenedor-galeria">
+  </div>
+  <section class="contenedor contenedor-galeria" id="events">
 
     <div class="title-galeria">
       <div class="title">
-        <p class="creacion">Our creations</p>
+        <p class="creacion">Nuestros eventos</p>
       </div>
 
       <div class="boton-galeria">
         <a href="#">
-          <p class="boton-all">See All</p>
+          <p class="boton-all">Ver mas</p>
         </a>
       </div>
 
@@ -158,10 +165,10 @@
     </div>
   </section>
 
-  <section class="contenedor mobile-design ">
+  <section class="contenedor mobile-design" id="Events">
 
     <div class="title">
-      <p class="creacion creacion-mobile">Our creations</p>
+      <p class="creacion creacion-mobile">Nuestros Eventos</p>
     </div>
 
     <div class="contenedor-mobile-design">
@@ -221,25 +228,98 @@
    
     <div class="boton">
       <a href="#">
-        <p class="boton-down">See All</p>
+        <p class="boton-down">Mas</p>
       </a>
     </div>
   </section>
 
-  <footer class="footer ">
+
+  <main class="contenido-productos" id="products">
+    <div>
+      <h1 class="title-product">Productos</h1>
+ 
+      <div class="productos-card">
+        <div class="card-articulo">
+          <img class="img-producto" src="/productosTienda/numero1.webp" alt="play station vr">
+          <div class="informacion-producto">
+            <h1>Lentes vr Play Station</h1>
+            <h1 class="titulo-precio">MXN 9,578.00</h1>
+            <h3>Antes <span>MXN 12,456.00</span></h3>
+            <div class="iconos">
+              <img src="/images/ic_carrito.svg" alt="carrito de entrega">
+              <img src="/images/ic_tienda.svg" alt="tienda icono">
+            </div>
+
+            
+          </div>
+        </div>
+
+        <div class="card-articulo">
+          <img class="img-producto" src="/productosTienda/numero2.webp" alt="play station vr">
+          <div class="informacion-producto">
+            <h1>Modem Alcatel Black</h1>
+            <h1 class="titulo-precio">MXN 1524.00</h1>
+            <h3>Antes <span>MXN 1890.00</span></h3>
+            <div class="iconos">
+              <img src="/images/ic_carrito.svg" alt="carrito de entrega">
+              <img src="/images/ic_tienda.svg" alt="tienda icono">
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="card-articulo">
+          <img class="img-producto" src="/productosTienda/numero4.webp" alt="play station vr">
+          <div class="informacion-producto">
+            <h1>Huawei Matebook D15</h1>
+            <h1 class="titulo-precio">MXN 23,456.00</h1>
+            <h3>Antes <span>MXN 25,245.00</span></h3>
+            <div class="iconos">
+              <img src="/images/ic_carrito.svg" alt="carrito de entrega">
+              <img src="/images/ic_tienda.svg" alt="tienda icono">
+            </div>
+            
+          </div>
+        </div>
+        <div class="card-articulo">
+          <img class="img-producto" src="/productosTienda/numero5.webp" alt="Moto G8 Play">
+          <div class="informacion-producto">
+              <h1 class="nombre-articulo">Moto G8 Play 128 Giga</h1>
+              <h1 class="titulo-precio">MXN 10234.00</h1>
+              <h3>Antes <span>Antes MXN 12456.00</span></h3>
+
+              <div class="iconos">
+                  <img src="./images/ic_carrito.svg" alt="carrito de entrega">
+                  <img src="./images/ic_tienda.svg" alt="tienda icono">
+              </div>
+          </div>
+      </div>
+
+
+  
+
+      </div>
+
+      <a class="link-store" href="/carrito.html">Ir a la tienda</a>
+    </div>
+  </main>
+
+
+
+
+  <footer class="footer" id="suport">
     <div class="footer-seccion contenedor">
 
-      <div class="first-seccion">
+      <div class="first-seccl,ion">
         <div class="image-logo">
           <img src="/images/logo.svg" alt="">
         </div>
         <div class="navegacion-footer">
-          <nav class="nav-separacion">
-            <a href="#">Nosotros</a>
-            <a href="#">Carreras</a>
-            <a href="#">Eventos</a>
-            <a href="#">Productos</a>
-            <a href="#">Soporte</a>
+          <nav class="nav-separacion nav-global">
+            <a href="#us">Nosotros</a>
+            <a href="#events">Eventos</a>
+            <a href="#products">Productos</a>
+            <a href="#">Contacto</a>
           </nav>
         </div>
       </div>
@@ -252,13 +332,13 @@
           <img src="/images/icon-instagram.svg" alt="">
         </div>
         <div class="derechos">
-          <p>&copy; 2021 loopstudios. all rights reserved</p>
+          <p>&copy; 2021 loopstore. all rights reserved</p>
         </div>
       </div>
 
     </div>
   </footer>
 
-  <script src="build/js/bundle.min.js"></script>
+  <script src="src/js/app.js" type="module"></script>
 </body>
 </html>

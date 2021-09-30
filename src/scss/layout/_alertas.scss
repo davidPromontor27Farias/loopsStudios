@@ -1,0 +1,35 @@
+.alerta-agregado{
+    transition: aoll .3s ease-in;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background: linear-gradient(to right, $Black, $Very-Dark);
+    padding: 1.3rem;
+    color: $White;
+    font-weight: bold;
+}
+
+
+.filas-tabla{
+    
+    img{
+        width: 8rem;
+    }
+    td{
+        color: $White;
+        text-align: center;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+
+    a{
+        color: $White;
+        font-size: 2rem;
+    
+    }
+}
+.alerta-pago{
+    text-align:end;
+    line-height: 3rem;
+}
